@@ -21,7 +21,7 @@ const Navbar = () => {
         </nav>
         <a
           href="#insights"
-          className="hidden rounded-md bg-teal-400 px-3 py-2 text-xs font-medium text-[#0a1a33] shadow-sm hover:bg-teal-300 sm:inline-block"
+          className="hidden rounded-md bg-amber-300 px-3 py-2 text-xs font-medium text-[#0a1a33] shadow-sm transition hover:bg-amber-200 sm:inline-block"
         >
           Explore Research
         </a>

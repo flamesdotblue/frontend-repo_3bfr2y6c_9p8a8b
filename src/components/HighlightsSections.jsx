@@ -3,29 +3,27 @@ import { motion } from 'framer-motion';
 import { LineChart, FileText, Briefcase, BookOpen, Mail } from 'lucide-react';
 
 const Card = ({ icon: Icon, title, desc, href, accent = 'teal' }) => {
-  const accentClasses =
-    accent === 'gold'
-      ? 'from-amber-300/30 to-amber-100/0 border-amber-200/30'
-      : 'from-teal-300/30 to-teal-100/0 border-teal-200/30';
+  const accentRing = accent === 'gold' ? 'ring-amber-200/50' : 'ring-teal-200/50';
+  const accentDot = accent === 'gold' ? 'bg-amber-300' : 'bg-teal-300';
 
   return (
     <motion.a
       href={href}
-      className={`group relative block rounded-2xl border ${accentClasses} bg-white/60 p-6 shadow-sm backdrop-blur transition hover:shadow-lg`}
+      className={`group relative block rounded-2xl border border-slate-200 bg-white/70 p-6 shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus:ring-2 ${accentRing}`}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
     >
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/40 to-white/10 opacity-0 transition group-hover:opacity-100" />
+      <span className={`absolute right-4 top-4 h-2 w-2 rounded-full ${accentDot}`} />
       <div className="relative flex items-start gap-4">
-        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#0a1a33] to-[#0f274d] text-white shadow">
+        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#0a1a33] text-white shadow">
           <Icon className="h-6 w-6" />
         </div>
         <div>
           <h3 className="text-lg font-semibold text-[#0a1a33]">{title}</h3>
           <p className="mt-2 text-sm leading-relaxed text-slate-600">{desc}</p>
-          <span className="mt-3 inline-block text-sm font-medium text-teal-700 group-hover:underline">
+          <span className="mt-3 inline-block text-sm font-medium text-[#0a1a33]/80 group-hover:underline">
             Learn more →
           </span>
         </div>
@@ -44,7 +42,7 @@ const HighlightsSections = () => {
               Evidence. Structure. Conviction.
             </h2>
             <p className="mt-2 max-w-2xl text-slate-600">
-              We are a research-first firm. Our work is built on primary data, transparent methods, and institutional rigor designed for decision-makers.
+              A consulting-grade approach to independent research—clear hypotheses, transparent methods, and outputs tailored for executive decisions.
             </p>
           </div>
         </div>
@@ -53,7 +51,7 @@ const HighlightsSections = () => {
           <Card
             icon={FileText}
             title="Research Library"
-            desc="Flagship sector outlooks, thematic deep-dives, and company primers with clear implications."
+            desc="Flagship outlooks, thematic deep-dives, and primers with board-ready implications."
             href="#reports"
             accent="gold"
           />
@@ -67,14 +65,14 @@ const HighlightsSections = () => {
           <Card
             icon={BookOpen}
             title="Methodology"
-            desc="Model-first approach, triangulated data sources, and reproducible frameworks for valuation and strategy."
+            desc="Model-first approach with triangulated data and reproducible frameworks for valuation and strategy."
             href="#methodology"
             accent="teal"
           />
           <Card
             icon={Briefcase}
             title="Custom Studies"
-            desc="Bespoke research, market mapping, and thought leadership for boards and leadership teams."
+            desc="Bespoke research, market mapping, and valuation reviews for boards and leadership teams."
             href="#services"
             accent="gold"
           />
