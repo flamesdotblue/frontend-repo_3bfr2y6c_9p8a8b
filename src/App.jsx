@@ -15,7 +15,7 @@ const Navbar = () => {
         <nav className="hidden gap-6 text-sm text-white/80 sm:flex">
           <a href="#about" className="hover:text-white">About</a>
           <a href="#reports" className="hover:text-white">Research</a>
-          <a href="#services" className="hover:text-white">Advisory</a>
+          <a href="#methodology" className="hover:text-white">Methodology</a>
           <a href="#insights" className="hover:text-white">Insights</a>
           <a href="#contact" className="hover:text-white">Contact</a>
         </nav>
@@ -23,7 +23,7 @@ const Navbar = () => {
           href="#insights"
           className="hidden rounded-md bg-teal-400 px-3 py-2 text-xs font-medium text-[#0a1a33] shadow-sm hover:bg-teal-300 sm:inline-block"
         >
-          Explore Insights
+          Explore Research
         </a>
       </div>
     </div>
@@ -41,9 +41,9 @@ const SectionDetail = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-xl font-semibold text-[#0a1a33]">About Us</h3>
+            <h3 className="text-xl font-semibold text-[#0a1a33]">About the Firm</h3>
             <p className="mt-3 text-slate-600">
-              Vishal Analytica is a finance and strategy research firm focused on delivering decision-grade insights. Our work blends institutional-quality analytics with pragmatic recommendations that drive measurable outcomes.
+              Vishal Analytica is an independent finance and strategy research firm. We build valuation-grade models, triangulate multiple data sources, and translate evidence into clear, decision-ready recommendations for leaders.
             </p>
           </motion.div>
           <motion.div
@@ -55,20 +55,20 @@ const SectionDetail = () => {
           >
             <dl className="grid grid-cols-2 gap-6 text-sm">
               <div>
-                <dt className="text-slate-500">Core Domains</dt>
-                <dd className="mt-1 font-medium text-[#0a1a33]">Finance, Valuation, Equity Research</dd>
-              </div>
-              <div>
-                <dt className="text-slate-500">Operating Model</dt>
-                <dd className="mt-1 font-medium text-[#0a1a33]">Independent, research-first</dd>
-              </div>
-              <div>
                 <dt className="text-slate-500">Coverage</dt>
-                <dd className="mt-1 font-medium text-[#0a1a33]">Financials, FinTech, Consumer</dd>
+                <dd className="mt-1 font-medium text-[#0a1a33]">Banks, NBFCs, FinTech, Consumer adjacencies</dd>
               </div>
               <div>
-                <dt className="text-slate-500">Regions</dt>
-                <dd className="mt-1 font-medium text-[#0a1a33]">India and Global</dd>
+                <dt className="text-slate-500">Lens</dt>
+                <dd className="mt-1 font-medium text-[#0a1a33]">Unit economics, cohorts, risk, valuation</dd>
+              </div>
+              <div>
+                <dt className="text-slate-500">Outputs</dt>
+                <dd className="mt-1 font-medium text-[#0a1a33]">Outlooks, primers, custom studies</dd>
+              </div>
+              <div>
+                <dt className="text-slate-500">Standards</dt>
+                <dd className="mt-1 font-medium text-[#0a1a33]">Transparent methods, reproducible results</dd>
               </div>
             </dl>
           </motion.div>
@@ -82,10 +82,16 @@ const SectionDetail = () => {
             transition={{ duration: 0.6 }}
             className="order-2 md:order-1"
           >
-            <h3 className="text-xl font-semibold text-[#0a1a33]">Research Reports</h3>
+            <h3 className="text-xl font-semibold text-[#0a1a33]">Research Library</h3>
             <p className="mt-3 text-slate-600">
-              We publish sector deep-dives, thematic outlooks, and company primers grounded in robust models and proprietary datasets.
+              Sector outlooks, thematic deep-dives, and company primers organized by taxonomy and tags for faster discovery.
             </p>
+            <ul className="mt-4 flex flex-wrap gap-2 text-xs text-slate-700">
+              <li className="rounded-full border border-slate-200 px-3 py-1">Financials</li>
+              <li className="rounded-full border border-slate-200 px-3 py-1">FinTech</li>
+              <li className="rounded-full border border-slate-200 px-3 py-1">Valuation</li>
+              <li className="rounded-full border border-slate-200 px-3 py-1">Capital Markets</li>
+            </ul>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -103,7 +109,7 @@ const SectionDetail = () => {
           </motion.div>
         </div>
 
-        <div id="services" className="grid grid-cols-1 items-center gap-8 py-6 md:grid-cols-2">
+        <div id="methodology" className="grid grid-cols-1 items-center gap-8 py-6 md:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -112,8 +118,8 @@ const SectionDetail = () => {
             className="overflow-hidden rounded-2xl border border-slate-200"
           >
             <img
-              src="https://images.unsplash.com/photo-1523285367489-d38aec03b7f3?q=80&w=1600&auto=format&fit=crop"
-              alt="Advisory"
+              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop"
+              alt="Methodology"
               className="h-full w-full object-cover"
               loading="lazy"
             />
@@ -124,15 +130,47 @@ const SectionDetail = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-xl font-semibold text-[#0a1a33]">Advisory Services</h3>
+            <h3 className="text-xl font-semibold text-[#0a1a33]">Methodology</h3>
             <p className="mt-3 text-slate-600">
-              We advise on valuation, transaction support, capital markets, and strategic reviews — translating insight into action.
+              We combine bottom-up models with macro overlays, triangulate public filings and alternative data, and document assumptions to ensure reproducibility.
             </p>
             <ul className="mt-4 grid list-disc gap-2 pl-5 text-sm text-slate-700">
-              <li>Valuation and fairness opinions</li>
-              <li>IPO and fundraising readiness</li>
-              <li>Commercial and market due diligence</li>
-              <li>Board-level strategic reviews</li>
+              <li>Model-first, evidence-led analysis</li>
+              <li>Cross-validated with cohorts and unit economics</li>
+              <li>Transparent, source-linked citations</li>
+            </ul>
+          </motion.div>
+        </div>
+
+        <div id="services" className="grid grid-cols-1 items-center gap-8 py-6 md:grid-cols-2">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.05 }}
+            className="overflow-hidden rounded-2xl border border-slate-200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1523285367489-d38aec03b7f3?q=80&w=1600&auto=format&fit=crop"
+              alt="Custom research"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h3 className="text-xl font-semibold text-[#0a1a33]">Custom Research & Advisory</h3>
+            <p className="mt-3 text-slate-600">
+              Commission tailored studies, market maps, and valuation reviews to support transactions, strategy, and communication.
+            </p>
+            <ul className="mt-4 grid list-disc gap-2 pl-5 text-sm text-slate-700">
+              <li>Custom sector and company studies</li>
+              <li>Capital markets and valuation support</li>
+              <li>Thought leadership and investor narratives</li>
             </ul>
           </motion.div>
         </div>

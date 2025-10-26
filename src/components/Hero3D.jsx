@@ -28,27 +28,27 @@ const Hero3D = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <p className="mb-4 inline-block rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs tracking-wide text-white/80 backdrop-blur">
-            Vishal Analytica
+            Vishal Analytica — Independent Research
           </p>
           <h1 className="font-['Mona_Sans',Inter,system-ui] text-4xl font-semibold leading-tight text-white sm:text-6xl">
             Transforming Data into
             <span className="bg-gradient-to-r from-teal-300 via-white to-amber-200 bg-clip-text text-transparent"> Strategic Insights</span>
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg">
-            Deep expertise across Finance, Valuation Advisory, and Equity Research — combining rigorous analysis with practical strategy to unlock enterprise value.
+            Independent finance and strategy research across Financials and FinTech. We deliver valuation-grade models, robust evidence, and clear frameworks for executive decisions.
           </p>
           <div className="mt-8 flex gap-3">
             <a
               href="#insights"
               className="pointer-events-auto inline-flex items-center justify-center rounded-md bg-teal-400 px-5 py-3 text-sm font-medium text-[#0a1a33] shadow/10 shadow-teal-300/30 transition hover:bg-teal-300 focus:outline-none focus:ring-2 focus:ring-teal-300/60"
             >
-              Explore Insights
+              Explore Research
             </a>
             <a
-              href="#contact"
+              href="#reports"
               className="pointer-events-auto inline-flex items-center justify-center rounded-md border border-white/20 bg-white/10 px-5 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/30"
             >
-              Contact Us
+              View Reports
             </a>
           </div>
         </motion.div>

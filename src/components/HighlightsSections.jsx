@@ -41,47 +41,47 @@ const HighlightsSections = () => {
         <div className="mb-12 flex items-end justify-between">
           <div>
             <h2 className="text-2xl font-semibold tracking-tight text-[#0a1a33] sm:text-3xl">
-              Clarity. Rigor. Impact.
+              Evidence. Structure. Conviction.
             </h2>
             <p className="mt-2 max-w-2xl text-slate-600">
-              We deliver decision-grade insight at the intersection of finance and strategy, helping leaders act with confidence.
+              We are a research-first firm. Our work is built on primary data, transparent methods, and institutional rigor designed for decision-makers.
             </p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Card
-            icon={LineChart}
-            title="About Us"
-            desc="Independent research firm blending institutional-grade analytics with boardroom pragmatism."
-            href="#about"
-            accent="teal"
-          />
-          <Card
             icon={FileText}
-            title="Research Reports"
-            desc="Sector deep-dives, thematic outlooks, and company primers with actionable conclusions."
+            title="Research Library"
+            desc="Flagship sector outlooks, thematic deep-dives, and company primers with clear implications."
             href="#reports"
             accent="gold"
           />
           <Card
-            icon={Briefcase}
-            title="Advisory Services"
-            desc="Valuation, transaction support, capital markets advisory, and strategic reviews."
-            href="#services"
+            icon={LineChart}
+            title="Sectors & Coverage"
+            desc="Financials and FinTech focus, with select Consumer adjacencies. Pan-India with global context."
+            href="#about"
             accent="teal"
           />
           <Card
             icon={BookOpen}
-            title="Insights & Publications"
-            desc="Curated perspectives on emerging trends shaping value creation and risk."
-            href="#insights"
+            title="Methodology"
+            desc="Model-first approach, triangulated data sources, and reproducible frameworks for valuation and strategy."
+            href="#methodology"
+            accent="teal"
+          />
+          <Card
+            icon={Briefcase}
+            title="Custom Studies"
+            desc="Bespoke research, market mapping, and thought leadership for boards and leadership teams."
+            href="#services"
             accent="gold"
           />
           <Card
             icon={Mail}
             title="Contact"
-            desc="Partner with us to unlock your next growth chapter. We respond within one business day."
+            desc="Speak with our research team about coverage, collaborations, or custom mandates."
             href="#contact"
             accent="teal"
           />
